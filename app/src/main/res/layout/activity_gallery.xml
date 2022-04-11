@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallery">
+
+    <TextView
+        android:id="@+id/mxGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MX Gallery"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/layoutSize"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/mxGallery"
+        android:background="@drawable/gallery_1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tajMahal"
+        android:layout_marginLeft="10dp"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/mxGallery"
+        android:layout_toRightOf="@+id/tajMahal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gallery_2"
+        android:id="@+id/qutub" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tajMahal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="TAJ MAHAL"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qutub"
+        android:layout_toRightOf="@id/txt1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:text="QUTUB MINAR"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/txt2"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt1"
+        android:background="@drawable/gallery_3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gate"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt2"
+        android:layout_toRightOf="@+id/gate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gallery_4"
+        android:id="@+id/jama_masjid"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:text="INDIA GATE"
+        android:id="@+id/txt3"
+        android:layout_below="@+id/gate"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jama_masjid"
+        android:layout_toRightOf="@id/gate"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="JAMA MASJID"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/txt4"/>
+
+</RelativeLayout>
